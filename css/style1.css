@@ -1,0 +1,228 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin: 0;
+  height: 100vh;
+  background: url("../img/intro1.jpg") center;
+
+}
+  @media only screen and (max-device-width: 320px) {
+    body{
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      margin: 0;
+      height: 100vh;
+      background-size: cover;
+      background: url("../img/22.jpg") fixed;
+      background-size:100vw;
+    }
+  }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  color: black;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  width: 100%;
+  font-size: 44px;
+  position: fixed;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+  color: black;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.nav__link:hover {
+  color: red;
+}
+.main{
+  font-size: 60px;
+  margin: 80px 0 0 0;
+  padding: 0 25vw 0 40vw;
+  text-transform: uppercase;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35vh 0 25vh 0;
+  margin: 0 10vw 0 10vw;
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+
+}
+
+.category__link {
+  padding-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+  color: black;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.category__link:hover {
+  color: red;
+}
+
+.list_of_supplies {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.list {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.supply1, .supply2, .supply3 {
+
+  background-size: 300px;
+  width: 300px;
+  height: 400px;
+  margin-top: 75px;
+  margin-right: 40px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.name {
+  padding-left: 25%;
+  padding-right: 25%;
+  width: 300px;
+  height: 50px;
+  max-width: 300px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 35px;
+  transition: color .2s;
+}
+.name:hover{
+  color: red;
+}
+
+.price__button{
+  width: 300px;
+  height: 50px;
+  margin: 0;
+  color: red;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  padding-top: 8px;
+  font-size: 15px;
+  color: red;
+  background: black;
+  width: 150px;
+  height: 50px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  z-index: 100;
+}
+
+
+
+.price{
+  width: 150px;
+  height: 50px;
+  margin: 0;
+}
+.supply1  .price{
+  width: 75px;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+.new__price{
+  width: 75px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  margin: 0;
+  color: white;
+  background-color: green;
+  border-color: red;
+  transition: color .2s;
+}
+.button:hover{
+  color: blue;
+  background-color: yellow;
+}
+
+.footer {
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+}
+
+@media print {
+
+
+  @page {
+    margin: 2cm;
+  }
+
+  .name, .nav__link, .button {
+    display: none;
+  }
+
+  .hidden {
+
+   display: block !important;
+
+  }
+}
+
